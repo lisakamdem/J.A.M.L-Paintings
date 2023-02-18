@@ -1,0 +1,86 @@
+<!-- Lisa Kamdem
+TRU ID: T00643478
+October 10, 2021
+
+this is the page for the artist Michelle for my website
+File name: michelle's page.html
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>J.A.M.L Paintings</title>
+		<meta charset="UTF-8" />
+		<script src="js.js" async></script>
+      <link href="artistcss.css" rel="stylesheet" />
+	  <link href="maincss.css" rel="stylesheet" />
+	</head>
+	
+		<header>
+				<div class ="flex">
+					<div class ="logo">
+						<a href="index.html#main-body-image">J.A.M.L Paintings</a>
+					</div>
+					<nav>
+						<button id="nav-toggle" class="hamburger-menu" onclick="test()">
+							<span class="strip"></span>
+							<span class="strip"></span>
+							<span class="strip"></span>
+						</button>
+							<ul id= "nav-menu-container">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html#boxes">Artist</a>
+									<ul>
+										<li><a href="john's page.html">John</a></li>
+										<li><a href="axel's page.html">Axel</a></li>
+										<li><a href="michelle's page.html">Michelle</a></li>
+										<li><a href="lisa's page.html">Lisa</a></li>
+									</ul> 
+								</li>	
+								<li><a href="index.html#aboutus">About Us</a></li>
+								<li><a href="index.html#contactus">Contact Us</a></li>
+								<li><a href="RP.html">Reference page</a></li>
+							</ul>	
+					</nav>
+				</div>
+			</header>
+			
+			<article class="bio-image">
+					<h1>Michelle's paintings</h1>
+					<img src="Michelle's background/background.jpg" alt="michelle-image"/>
+					<p class="bio-desc">Hello I am Michelle and I have a cat named Bell,
+					here are some paintings I like to do when I'm not decorating my house or dancing for people's money.</p>
+			</article>
+			
+			<div class="full-img" id="full-img">
+					<img src="paintings/M/M1.jpg" id="fullimg">
+					<span onclick="closeImg()">X</span>
+				</div>
+				
+				<div class="img-gallery">
+					<div class="gallery">
+						<img src="paintings/M/M1.jpg" onclick="openImg(this.src)">
+						<div class="desc">Voltorb<br>By: Michelle</div>
+					</div>	
+					<div>
+						<img src="paintings/M/M2.jpg" onclick="openImg(this.src)">
+						<div class="desc">Piplup<br>By: Michelle</div>
+					</div>	
+					<div>
+						<img src="paintings/M/M5.jpg" onclick="openImg(this.src)">
+						<div class="desc">Solrock<br>By: Michelle</div>						
+					</div>
+					<div>	
+						<img src="paintings/M/M4.jpg" onclick="openImg(this.src)">
+						<div class="desc">Night Galaxy<br>By: Michelle</div>
+					</div>	
+					<div>	
+						<img src="paintings/M/M3.jpg" onclick="openImg(this.src)">
+						<div class="desc">Mountains<br>By: Michelle</div>
+					</div>	
+						
+				</div>
+	<footer>
+		<p>All right Reserved J.A.M.L Paintings</p>
+	</footer>
+
+</html>

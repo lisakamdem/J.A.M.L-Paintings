@@ -1,0 +1,87 @@
+<!-- Lisa Kamdem
+TRU ID: T00643478
+October 10, 2021
+
+this is the page for the artist John for my website
+File name: john's page.html
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>J.A.M.L Paintings</title>
+		<meta charset="UTF-8" />
+		<script src="js.js" async></script>
+      <link href="artistcss.css" rel="stylesheet" />
+	  <link href="maincss.css" rel="stylesheet" />
+	</head>
+	
+		<header>
+				<div class ="flex">
+					<div class ="logo">
+						<a href="index.html#main-body-image">J.A.M.L Paintings</a>
+					</div>
+					<nav>
+						<button id="nav-toggle" class="hamburger-menu" onclick="test()">
+							<span class="strip"></span>
+							<span class="strip"></span>
+							<span class="strip"></span>
+						</button>
+							<ul id= "nav-menu-container">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html#boxes">Artist</a>
+									<ul>
+										<li><a href="john's page.html">John</a></li>
+										<li><a href="axel's page.html">Axel</a></li>
+										<li><a href="michelle's page.html">Michelle</a></li>
+										<li><a href="lisa's page.html">Lisa</a></li>
+									</ul> 
+								</li>
+								<li><a href="index.html#aboutus">About Us</a></li>								
+								<li><a href="index.html#contactus">Contact Us</a></li>
+								<li><a href="RP.html">Reference page</a></li>
+							</ul>	
+					</nav>
+				</div>
+		</header>
+		
+			<article class="bio-image">
+				<h1>John's paintings</h1>
+				<img src="John's background/background.jpg" alt="john-image"/>
+				<p class="bio-desc">Hello my name is John here are some of my paintings I do when I am not
+					kicking someone's butt and watching UFC fights. LOL</p>
+			</article>
+			
+			<div class="full-img" id="full-img">
+					<img src="paintings/J/J1.jpg" id="fullimg">
+					<span onclick="closeImg()">X</span>
+				</div>
+				
+				<div class="img-gallery">
+					<div class="gallery">
+						<img src="paintings/J/J1.jpg" onclick="openImg(this.src)">
+						<div class="desc">Squirtle<br>By: John</div>
+					</div>	
+					<div>
+						<img src="paintings/J/J2.jpg" onclick="openImg(this.src)">
+						<div class="desc">Natu<br>By: John</div>
+					</div>	
+					<div>	
+						<img src="paintings/J/J4.jpg" onclick="openImg(this.src)">
+						<div class="desc">Old Day<br>By: John</div>
+					</div>	
+					<div>	
+						<img src="paintings/J/J3.jpg" onclick="openImg(this.src)">
+						<div class="desc">Pattern<br>By: John</div>
+					</div>	
+					<div>
+						<img src="paintings/J/J5.jpg" onclick="openImg(this.src)">
+						<div class="desc">River<br>By: John</div>						
+					</div>	
+				</div>
+			
+	<footer>
+		<p>All right Reserved J.A.M.L Paintings</p>
+	</footer>
+
+</html>

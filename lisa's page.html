@@ -1,0 +1,93 @@
+<!-- Lisa Kamdem
+TRU ID: T00643478
+October 10, 2021
+
+this is the page for the artist Lisa for my website
+File name: lisa's page.html
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>J.A.M.L Paintings</title>
+		<meta charset="UTF-8" />
+		
+      <link href="artistcss.css" rel="stylesheet" />
+	  <link href="maincss.css" rel="stylesheet" />
+	  <script src="js.js" async></script>
+	</head>
+	
+	<body>
+			<header>
+				<div class ="flex">
+					<div class ="logo">
+						<a href="index.html#main-body-image">J.A.M.L Paintings</a>
+					</div>
+					<nav>
+						<button id="nav-toggle" class="hamburger-menu" onclick="test()">
+							<span class="strip"></span>
+							<span class="strip"></span>
+							<span class="strip"></span>
+						</button>
+							<ul id= "nav-menu-container">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html#boxes">Artist</a>
+									<ul>
+										<li><a href="john's page.html">John</a></li>
+										<li><a href="axel's page.html">Axel</a></li>
+										<li><a href="michelle's page.html">Michelle</a></li>
+										<li><a href="lisa's page.html">Lisa</a></li>
+									</ul> 
+								</li>	
+								<li><a href="index.html#aboutus">About Us</a></li>
+								<li><a href="index.html#contactus">Contact Us</a></li>
+								<li><a href="RP.html">Reference page</a></li>
+							</ul>	
+					</nav>
+				</div>
+			</header>
+				
+				<article class="bio-image">
+					<h1>Lisa's paintings</h1>
+					<img src="Lisa's background.jpg" alt="lisa-image"/>
+					<p class="bio-desc">Hello my name is Lisa and when I'm not watching the Big Bang Theory, study, working-out or watching Netflix
+					I paint here are some of my paintings</p>
+				</article>
+				
+				<div class="full-img" id="full-img">
+					<img src="paintings/L/L1.jpg" id="fullimg">
+					<span onclick="closeImg()">X</span>
+				</div>
+				
+				<div class="img-gallery">
+					<div class="gallery"> 
+						<img src="paintings/L/L1.jpg" onclick="openImg(this.src)">
+						 <div class="desc">Charmander<br>By: Lisa</div>
+					</div>	
+					<div class="gallery"> 
+						<img src="paintings/L/L5.jpg" onclick="openImg(this.src)">
+						<div class="desc">Loudred<br>By: Lisa</div>
+					</div>
+							
+					<div class="gallery"> 	
+						<img src="paintings/L/L3.jpg" onclick="openImg(this.src)">
+						<div class="desc">Dark Tree<br>By: Lisa</div>
+					</div>
+						
+					<div class="gallery"> 	
+						<img src="paintings/L/L4.jpg" onclick="openImg(this.src)">
+						<div class="desc">Spring Tree<br>By: Lisa</div>
+					</div>
+						
+					<div class="gallery"> 	
+						<img src="paintings/L/L2.jpg" onclick="openImg(this.src)">
+						<div class="desc">4 Season Trees<br>By: Lisa</div>
+					</div>
+							
+				</div>
+					
+		<footer>
+			<p>All right Reserved J.A.M.L Paintings</p>
+		</footer>
+	</body>
+</html>

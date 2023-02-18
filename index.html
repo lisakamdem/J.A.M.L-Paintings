@@ -1,0 +1,106 @@
+<!-- Lisa Kamdem
+TRU ID: T00643478
+October 10, 2021
+
+this is the main page of my website
+File name: index.html
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>J.A.M.L Paintings</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="js.js"></script>
+      <link href="maincss.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<div id="wrapper">  
+			<header>
+				<div class ="flex">
+					<div class ="logo">
+						<a href="index.html#main-body-image">J.A.M.L Paintings</a>
+					</div>
+					<nav>
+						<button id="nav-toggle" class="hamburger-menu" onclick="test()">
+							<span class="strip"></span>
+							<span class="strip"></span>
+							<span class="strip"></span>
+						</button>
+							<ul id= "nav-menu-container">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#boxes">Artist</a>
+									<ul>
+										<li><a href="john's page.html">John</a></li>
+										<li><a href="axel's page.html">Axel</a></li>
+										<li><a href="michelle's page.html">Michelle</a></li>
+										<li><a href="lisa's page.html">Lisa</a></li>
+									</ul> 
+								</li>	
+								<li><a href="#aboutus">About Us</a></li>
+								<li><a href="#contactus">Contact Us</a></li>
+								<li><a href="RP.html">Reference page</a></li>
+							</ul>	
+					</nav>
+				</div>
+			</header>
+			
+			<main> <!-- might change this to article --> 
+				<section class= "main-body-image" id="main-body-image">
+					<img src="_Logo.png" alt="J.A.M.L Paintings image"/>
+				</section>
+				
+				<section class= "artist-boxes" id="boxes">
+					<div class ="flex">
+						<div class="box">
+							<h2>John</h2>
+							</P>John's painting</p>
+							<button><a href="john's page.html">View Paintings</a></button>
+						</div>
+						<div class="box box2">
+							<h2>Axel</h2>
+							</P>Axel's painting</p>
+							<button><a href="axel's page.html">View Paintings</a></button>
+						</div>
+						<div class="box box3">
+							<h2>Michelle</h2>
+							</P>Michelle's painting</p>
+							<button><a href="michelle's page.html">View Paintings</a></button>
+						</div>
+						<div class="box">
+							<h2>Lisa</h2>
+							</P>Lisa's painting</p>
+							<button><a href="lisa's page.html">View Paintings</a></button>
+						</div>
+					</div>
+				</section>
+			
+				<section class="about-us" id="aboutus">
+					<h1>About us</h1>
+					<p>we are 4 different people who come together to paint and talk about our problem over painting. 
+					It release our stress and anxiety, and now we have found a new love for painting.</p>
+				</section>
+				
+				<section class= "contact-us"  id="contactus">
+					<h1>Contact us</h1>
+					<div class= "flex">
+						<div class= "contact-form">
+							<form id="contact-form">
+							<p>required values are marked(*)</p>
+								<input type="text" name="name" id="name" placeholder="Name*" required />
+								<input type="email" name="email" id="email" placeholder="Email*" required /> 
+								<textarea id="message" placeholder="Please type your bio and how many paintings you want to be posted on your page*" required ></textarea>
+								<input type="submit" value="Submit" onclick="addForm()" id="formbutton" />
+							</form>
+						</div>	
+					</div>	
+				</section>
+			</main> 
+			<footer>
+				<p>All right Reserved J.A.M.L Paintings</p>
+			</footer>
+		</div> 	
+	</body>
+</html>
